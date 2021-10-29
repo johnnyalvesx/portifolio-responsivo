@@ -1,2 +1,2 @@
-email = 'johnny@gmail.com'
-senha = '123'
+email = 'nome@email.com'
+senha = '#'

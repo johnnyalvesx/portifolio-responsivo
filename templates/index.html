@@ -104,7 +104,8 @@
 
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img class="img-fluid shadow" src="../static/img/johnnyjota-20211028-0001.jpg" alt="Foto do Johnny" data-anime="left">
+                    <img class="img-fluid shadow" src="../static/img/johnnyjota-20211028-0001.jpg" alt="Foto do Johnny"
+                        data-anime="left">
                 </div>
                 <div class="col-md-8" data-anime="right">
                     <h3>Desenvolvedor Full Stack</h3>
@@ -572,10 +573,26 @@
 
         </section>
 
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
 
     </main>
 
-
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                &copy; Copyright <strong>Johnny Alves</strong>
+            </div>
+        </div>
+    </footer>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>

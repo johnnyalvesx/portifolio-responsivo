@@ -39,10 +39,11 @@ def send():
         msg = Message(
             subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
             sender = app.config.get("MAIL_USERNAME"),
-            recipients= ['docencia.thiago@gmail.com', app.config.get("MAIL_USERNAME")],
+            recipients= ['contato.johnnyalves@gmail.com', app.config.get("MAIL_USERNAME")],
             body = f'''
             
             {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
+            
             {formContato.mensagem}
             '''
         )

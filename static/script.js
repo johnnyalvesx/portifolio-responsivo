@@ -4,10 +4,10 @@ const menuMobile = document.querySelector('.menu-mobile')
 const body = document.querySelector('body')
 
 menuMobile.addEventListener('click', () => {
-    menuMobile.classList.contains("bi-list")
+  menuMobile.classList.contains("bi-list")
     ? menuMobile.classList.replace("bi-list", "bi-x")
     : menuMobile.classList.replace("bi-x", "bi-list")
-    body.classList.toggle("menu-nav-active")
+  body.classList.toggle("menu-nav-active")
 })
 
 /* Fecha o menu quando clicar em algum item e muda o icone para list */
@@ -28,7 +28,7 @@ navItem.forEach((item) => {
 const item = document.querySelectorAll("[data-anime]");
 
 const animeScroll = () => {
-  const windowTop = window.pageYOffset + window.innerHeight * 0.85 ;
+  const windowTop = window.pageYOffset + window.innerHeight * 0.85;
 
   item.forEach((element) => {
     if (windowTop > element.offsetTop) {
@@ -41,7 +41,7 @@ const animeScroll = () => {
 
 animeScroll();
 
-window.addEventListener("scroll", ()=>{
+window.addEventListener("scroll", () => {
   animeScroll();
 })
 
@@ -50,7 +50,7 @@ window.addEventListener("scroll", ()=>{
 const btnEnviar = document.querySelector('#btn-enviar')
 const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
 
-btnEnviar.addEventListener("click", ()=>{
+btnEnviar.addEventListener("click", () => {
   btnEnviarLoader.style.display = "block";
   btnEnviar.style.display = "none"
 })
