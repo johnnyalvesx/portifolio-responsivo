@@ -11,7 +11,7 @@ html, body {
     top: 0;
     left: 0;
     bottom: 0;
-    background: #021124;
+    background: #001233;
     overflow-y: auto;
     width: 250px;
     transition: all ease-in-out 0.5s;
@@ -324,7 +324,7 @@ i.menu-mobile {
     bottom: 0;
     width: 250px;
     z-index: 9999;
-    background-color: #021124;
+    background-color: #001233;
     transition: .3s;
   }
   
