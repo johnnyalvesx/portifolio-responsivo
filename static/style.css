@@ -23,7 +23,7 @@ html, body {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #FB8500;
+    border: 8px solid #FFB703;
     border-radius: 50%;
 }
 
@@ -189,7 +189,7 @@ i.menu-mobile {
 }
 
 .section-bg {
-    background-color: #eff5ff;
+    background-color: #177b99;
 }
 
 .cv .cv-title {
@@ -237,7 +237,7 @@ i.menu-mobile {
 }
 
 .progress-bar {
-    background: #126782;
+    background: #FFB703;
 }
 
 .orange {
